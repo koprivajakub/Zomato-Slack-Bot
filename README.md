@@ -1,6 +1,8 @@
 ### Instalace a rozchození projektu
 1. Po stažení projektu vytvoříme nastavení databáze pro localhost `cp src/main/resources/application-development.properties__template src/main/resources/application-development.properties` 
 2. Upravíme nastavení zkopírovaného souboru pro připojení k databázi v souboru `vim src/main/resources/application-development.properties` kde vyplníte 
+    
+    
     ```
     1. Host, na kterém běží databázový stroj 
       `database.host=localhost`
@@ -13,6 +15,8 @@
     5. Název databáze
       `database.db_name=rohlik`
     ```
+    
+    
 2. Aplikaci je možné spustit více způsoby, uvádím dva nejpoužívanější:
     1. pomocí příkazu z terminálu
         `SPRING_PROFILES_ACTIVE=development,default mvn spring-boot:run`,
